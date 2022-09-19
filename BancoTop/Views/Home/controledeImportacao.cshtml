@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "controledeImportacao";
+}
+<!DOCTYPE html>
+chtrl>
+<head>
+    <reta nare-"viewport" content="width-device-width" />
+    <title>Index</title>
+    @Scripts.Render("../Scripts/jquery.dataTables.min.js")
+    @Scripts.Render("../Scripts/jquery.dataTables.js")
+    @Scripts.Render(.. / Scripts / date - eu.js")
+    @Scripts.Render("../Scripts/notify.min.js")
+    @scripts.Render("../Scripts/painel-arquivo.js")
+</head>
+<body>
+    <div>
+        <!-- Importar Planilha Excel -->
+        <div style="padding-left:40px; border: 1px solid black">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="box">
+                    </div>
+                    <form style="margin-left:15px;" class="form" action="Url.Action(" PainelArquivo", "Restituicao_Telas" )" method="post" enctype="multipart/form-data" id="formROA"
+                                <h4><strong>Importação IntraCred</strong></h4>
+                            </div>
+                            <div class="form-group">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+
+                                    <label for="file-upload" class="custom-file-upload">
+                                        <i class="glyphicon glyphicon-cloud-upload"></i> Carregar Planilha
+                                    </label>
+                                    <input id="file-upload" type="file" name="file-upload" accept-*.xlsx, .xls" />
+                                </div>
+                            </div>
+                            <div class="form-row">
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-danger btn-sm" id="btnSalvar">Salvar</button>
+                            </div>
+                     </form>
+                </div>
+            </div>
+        </div>
+    </body>

@@ -1,0 +1,41 @@
+﻿body, ul {
+    margin: 0px;
+    padding: 0px;
+    background-image: url('../imagens/banco_top.png');
+    overflow:hidden;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.botoes{
+    display:flex;
+    top:50%;
+}
+.botoes a{
+    color:white;
+    display: flex;
+    top: 50%;
+}
+.btn1{
+    margin-top:25%;
+    margin-right:6%;
+    margin-left:33%;
+    color: white;
+    text-decoration:none;
+}
+.btn1 a:hover {
+    color: white;
+    text-decoration: none;
+}
+.btn2 {
+    margin-top: 25%;
+    color: white;
+    text-decoration: none;
+}
+.btn2 a:hover {
+    color: white;
+    text-decoration: none;
+}

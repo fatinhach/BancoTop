@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Meu Aplicativo ASP.NET</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/Scripts/ScriprMenu.js")
+    <link href="~/Estilo/EstiloMenu.css" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <!--Logo-->
+        <a id="logo" href="@Url.Action("Index", "Home")">Banco TOP</a>
+        <nav id="nav">
+            <!--Botao Hamburguer-->
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                <span id="hamburguer"></span>
+            </button>
+            <!--Menu-->
+            <ul id="menu">
+                <li><a href="@Url.Action("Index", "Home")">Inicio</a></li>
+                <li><a href="@Url.Action("controledecadastros", "Home")">Exportar Remessa</a></li>
+                <li><a href="@Url.Action("controledeImportacao", "Home")">Importar Remessa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Banco TOP</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <script src="~/Scripts/ScriptMenu.js"></script>
+</body>
+</html>

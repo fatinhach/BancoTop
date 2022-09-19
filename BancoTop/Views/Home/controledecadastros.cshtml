@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "controledecadastros";
+}
+
+
+<html>
+<head>
+    <title>Exportar Remessa Contratos</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-12">
+            <h4>Exportar Remessa Contratos</h4>
+        </div>
+        <div class="col-md-12">
+            <form  method="post" action="~/Home/ExportarDados">
+                <br/>
+                <tr>
+                    <td><b>Informe a Data Desejada: </b></td>
+                    <td>
+                        <br/>
+                        <input type="date" name="Data"/>
+                    </td>
+                </tr>
+                <br/>
+                <br/>
+                <button class="btn btn-primary" type="submit" name="export">Exportar Remessa</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

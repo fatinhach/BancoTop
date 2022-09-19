@@ -1,0 +1,24 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Estilo/EstiloIndex.css" rel="stylesheet">
+    <title>Home - Banco TOP</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="botoes">
+        <button class="btn btn-primary btn-lg btn1"><a href="@Url.Action("controledecadastros", "Home")">Exportar Remessa</a></button>
+        <button class="btn btn-primary btn-lg btn2"><a href="@Url.Action("controledeImportacao", "Home")">Importar Remessa</a></button>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</body>
+</html>
